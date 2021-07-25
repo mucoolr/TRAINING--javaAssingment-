@@ -1,0 +1,26 @@
+ public class MyClass {
+    
+    public static void  main(String args[]) {
+     int[] A = {5, 17, 100, 11};
+
+     arraysum(A);
+    
+     
+    }
+
+    public static int arraysum(int[] A){
+        int sum=0;
+     for(int i=0;i<A.length;i++){
+         sum=sum+A[i];
+     }
+    System.out.println(sum);
+    return sum;   
+    }
+    
+}    
+
+
+    
+
+
+

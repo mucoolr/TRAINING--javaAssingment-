@@ -1,0 +1,21 @@
+public class MyClass {
+    public static void main(String args[]) {
+         int[] A = {1, 2, 3, 4, 5,8};
+         arraymax(A);
+    }
+         
+         
+         
+    public static int arraymax(int[] A){
+        
+        int max=0;
+        int i;
+        for( i=0; i<A.length; i++){
+            if (A[i]>max)
+                max=A[i];
+                
+        }
+        System.out.println(max);
+        return max;
+        }
+}

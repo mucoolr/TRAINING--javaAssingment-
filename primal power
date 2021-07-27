@@ -1,30 +1,39 @@
+import java.util.Arrays;  
+
 public class MyClass {
     public static void main(String args[]) {
     int[]  A = {-11, 7, 8, 9, 10, 11};
-
-    int max=0;
+    int[]  B= new int[A.length]; 
+    int negcount=0;; 
+    
+    for(int i=0;i<A.length; i++){
+        if (A[i]>0== true){
+            negcount+=1;
+            B[i]=A[i];
+        }
+    }
+    negcount=A.length-negcount;
+    
         int i,j;
         int count=0;
-        for( i=0; i<A.length; i++){
-            if (A[i]>max)
-                max=A[i];
-                
-        }
+        
     for(i=0;i<A.length; i++) {
         
-        for(j=2;j<max;j++){
+        for(j=2;j<B[i];j++){
             
-            if(A[i]%j==0){
-            count+=1;
-            break;
-           
+          if(B[i]>0){    
             
-        }
+            if(B[i]%j==0){
+             count+=1;
+             break;
+            }
+          }
+        
         }
     }  
        
-    System.out.println(A.length-count);  
-    }
+    System.out.println(A.length-count-negcount);  
+    System.out.println(Arrays.toString(B));      }
 
 }    
     

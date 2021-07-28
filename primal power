@@ -19,7 +19,7 @@ public class MyClass {
         
     for(i=0;i<A.length; i++) {
         
-        for(j=2;j<B[i];j++){
+        for(j=2;(j<B[i]/2);j++){
             
           if(B[i]>0){    
             
